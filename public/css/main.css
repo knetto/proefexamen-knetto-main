@@ -1,0 +1,492 @@
+/* background */
+.background{
+    z-index: 1 !important;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.backgroundLogin{
+    z-index: 1 !important;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../img/backgroundLogin.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #18181c;
+	background-color: #18181c;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #18181c;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #1a1919;	
+	background-image: -webkit-linear-gradient(45deg,
+  #26252c 25%,
+	transparent 25%,
+	transparent 50%,
+  #26252c 50%,
+  #26252c 75%,
+	transparent 75%,
+	transparent)
+}
+
+/* homepage */
+.title{
+    margin-top: 20vh;
+    color: white;
+    font-size: calc(3vw + 2.5vh + 2vmin);
+    font-family: 'Monotype Corsiva';
+    text-align: center;
+}
+.subTitle{
+    margin-top: -5vh;
+    color: white;
+    font-size: calc(3.5vw + 3vh + 2vmin);
+    font-family: 'Monotype Corsiva';
+    text-align: center;
+    text-decoration: underline 2px #D4AF37;
+    text-underline-offset: 2.5vw;
+}
+.logoHome{
+    margin: 0 auto;
+    width: 140px;
+}
+@media
+only screen and (max-width: 800px) {
+    .logoHome{
+      text-align: center;
+      width: 120px;
+     }
+    }
+
+/* de navbar */
+.nav-link{
+    font-family: 'Monotype Corsiva';
+    font-size: 40px !important;
+    color: white !important;
+}
+.dropdown-menu {
+    opacity: 0.9;
+    background-color: rgb(48, 48, 48) !important;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover{
+    background-color: rgb(71, 69, 69) !important;
+}
+
+/* login page */
+
+.loginContainer .card{
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-top: 8%;
+}
+.loginContainer .card-header{
+    text-align: center;
+    font-family: 'Monotype Corsiva';
+    font-size: 110px;
+    border: none;
+    text-decoration: underline 2px #D4AF37;
+    text-underline-offset: 35px;
+}
+.loginContainer .btn{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    display: block;
+    border-color: #D4AF37;
+    width: 400px;
+    font-family: 'Monotype Corsiva';
+    font-size: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+    color: white;
+    padding: 0px;
+}
+.loginContainer .btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #D4AF37;
+}
+@media
+only screen and (max-width: 800px) {
+    .loginContainer .btn {
+        font-size: 37px;
+     }
+     .loginContainer .card-header {
+        font-size: 80px;
+     }
+    }
+.loginContainer .form-control{
+    background: transparent !important;
+    color: white !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    border-width: 2px !important;
+    border-color: #D4AF37 !important;  
+    
+}
+.loginContainer .card-body{
+    margin: 0 auto;
+    width: 500px;
+}
+@media
+only screen and (max-width: 800px) {
+    .loginContainer .card-body {
+        width: 400px;
+     }
+    }
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+
+.menukaartGerechten{
+    color: white;
+    padding-top: 100px;
+    padding-left: 17%;
+    /* padding-right: 17%; */
+}
+
+/* menukaart */
+.backgroundMenu{
+    z-index: 1 !important;
+    min-height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/backgroundMenu.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    /* background-attachment: fixed !important; */
+}
+.menukaartTitle{
+    color: white;
+    font-size: 90px;
+    font-family: 'Monotype Corsiva';
+    text-align: center;
+    text-decoration: underline 2px #D4AF37;
+    text-underline-offset: 1vw;
+}
+@media
+only screen and (max-width: 1100) {
+    .menukaartTitle {
+      font-size: 80px;
+    }
+  }
+  @media
+only screen and (max-width: 800px) {
+    .menukaartTitle {
+      font-size: 70px;
+    }
+  }
+.menuCategory{
+    font-size: 40px;
+    font-family: 'Monotype Corsiva';
+    text-decoration: underline 2px #D4AF37;
+    text-underline-offset: 13px;
+    padding-bottom: 10px;
+}
+.menuCategoryNoEdit{
+    font-size: 40px;
+    font-family: 'Monotype Corsiva';
+    text-decoration: underline 2px #D4AF37;
+    text-underline-offset: 13px;
+    padding-bottom: 25px;
+}
+
+.buttonDeleteDish{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.buttonAddDish{
+    color: white;
+    background-color: transparent;
+    border: none;
+    margin-left: 4px;
+}
+.dishes{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: -38px;
+}
+.dishesNoEdit{
+    font-size: 20px;
+    margin-left: 0px;
+    margin-top: -35px;
+}
+
+.category{
+    margin-bottom: 100px;
+}
+.dishesDescription{
+    color: #afafaf;
+}
+.adDishItem{
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/* voorgerechten */
+.clickpopup {
+	position: absolute;
+}
+
+.popup {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content {
+    font-size: 17px ;
+    max-width: 600px;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+/* hoofgerechten */
+.clickpopup2 {
+	position: absolute;
+}
+
+.popup2 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content2 {
+    font-size: 17px ;
+    max-width: 600px;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+/* nagerechten */
+.clickpopup3 {
+	position: absolute;
+}
+
+.popup3 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content3 {
+    font-size: 17px ;
+    max-width: 600px;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+/* koude dranken */
+.clickpopup4 {
+	position: absolute;
+}
+
+.popup4 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content4 {
+    max-width: 600px;
+    font-size: 17px ;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close4 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+/* warme dranken */
+.clickpopup5 {
+	position: absolute;
+}
+
+.popup5 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content5 {
+    font-size: 17px ;
+    max-width: 600px;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close5 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+/* alcoholische dranken */
+.clickpopup6 {
+	position: absolute;
+}
+
+.popup6 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 999 !important;
+  }
+  
+  .popup-content6 {
+    font-size: 17px ;
+    max-width: 600px;
+    width: 80%;
+    height: 60vh;
+    padding: 20px;
+    position: relative;
+    background: rgb(27, 27, 27);
+    margin: 200px auto;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .close6 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
